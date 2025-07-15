@@ -1,8 +1,6 @@
-# 📊 Stock Vision AI
+# 📊 Stock Vision AI  - Dự án môn DAP
 
 Một ứng dụng web thông minh dùng để trực quan hóa, dự đoán và phân tích dữ liệu thị trường chứng khoán theo thời gian thực, tích hợp trí tuệ nhân tạo (AI) và các API tài chính mạnh mẽ.
-
-Một dự án môn DAP
 ---
 
 ## 🚀 Tính năng chính
@@ -34,30 +32,51 @@ cd DAP-project-stock-vision-ai
 ```
 
 ### 2.Tải "requirements" cho backend và chạy backend
+Trong folder DAP-project-stock-vision-ai/ , hãy đi vào folder backend
 ```bash
-DAP-project-stock-vision-ai/
-cd DAP-project-stock-vision-ai/backend
-cd backend  
+cd backend
+```
+Tạo môi trường ảo
+```bash
 python -m venv venv
 venv\Scripts\activate  # với Windows | source venv/bin/activate (Linux/Mac)
+```
+Tải "requirements" ( thư viện cần thiết ) 
+```bash
 pip install -r requirements.txt
+```
+Chạy backend
+```bash
 python app.py
+```
+Tóm gọn 
+
+```bash
+...
 ```
 
 ### 3. Tải NPM và chạy frontend
 Nếu chưa tải Node.js
 Tải tại : https://nodejs.org/
+
 Sau đó kiểm tra phiên bản
 ```bash
 node - v
 npm -v
 ```
+Mở terminal mới và vào thư mục dự án
+```bash
+cd DAP-project-stock-vision-ai
+```
+Tải thư viện cần của Node.js
 ```bash
 npm install
+```
+Chạy frontend trong thư mục gốc
+```bash
 npm run dev
 ```
+Bạn sẽ thấy link https://
 
 ## 👥 Thành viên nhóm
-Ngo Phuc Nguyen (Felix) – Phát triển giao diện & tích hợp AI
-
-[Tên các thành viên khác nếu có]
+Ngô Phúc Nguyên - Phát triển web
