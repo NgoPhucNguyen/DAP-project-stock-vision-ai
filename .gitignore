@@ -1,0 +1,32 @@
+# Node.js / React (frontend)
+node_modules/
+dist/
+build/
+.vite/
+
+# Python (backend)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Environment variables
+.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# VS Code
+.vscode/
+
+# System metadata
+*.swp
+*.swo
