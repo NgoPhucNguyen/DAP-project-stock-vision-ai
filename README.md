@@ -33,7 +33,7 @@ git clone https://github.com/NgoPhucNguyen/DAP-project-stock-vision-ai.git
 cd DAP-project-stock-vision-ai
 ```
 
-### 2.Tải requirements cho backend và chạy backend
+### 2.Tải "requirements" cho backend và chạy backend
 ```bash
 DAP-project-stock-vision-ai/
 cd DAP-project-stock-vision-ai/backend
@@ -45,6 +45,13 @@ python app.py
 ```
 
 ### 3. Tải NPM và chạy frontend
+Nếu chưa tải Node.js
+Tải tại : https://nodejs.org/
+Sau đó kiểm tra phiên bản
+```bash
+node - v
+npm -v
+```
 ```bash
 npm install
 npm run dev
