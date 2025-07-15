@@ -2,7 +2,7 @@
 
 Một ứng dụng web thông minh dùng để trực quan hóa, dự đoán và phân tích dữ liệu thị trường chứng khoán theo thời gian thực, tích hợp trí tuệ nhân tạo (AI) và các API tài chính mạnh mẽ.
 
-Một dự án DAP
+Một dự án môn DAP
 ---
 
 ## 🚀 Tính năng chính
@@ -32,3 +32,10 @@ Một dự án DAP
 ```bash
 git clone https://github.com/NgoPhucNguyen/DAP-project-stock-vision-ai.git
 cd DAP-project-stock-vision-ai
+```
+
+
+## 👥 Thành viên nhóm
+Ngo Phuc Nguyen (Felix) – Phát triển giao diện & tích hợp AI
+
+[Tên các thành viên khác nếu có]
