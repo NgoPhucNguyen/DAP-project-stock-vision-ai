@@ -39,6 +39,8 @@ Trước khi khởi động project, hãy đảm bảo bạn đã cài đầy đ
   ```bash
   git --version
   ```
+
+### Chạy Dự Án 
 ### 1. Tải dự án về máy
 
 ```bash
@@ -67,7 +69,10 @@ python app.py
 Tóm gọn 
 
 ```bash
-...
+python -m venv venv
+venv\Scripts\activate  # với Windows | source venv/bin/activate (Linux/Mac)
+pip install -r requirements.txt
+python app.py
 ```
 
 ### 3. Tải NPM và chạy frontend
