@@ -1,0 +1,113 @@
+/* StockPrediction.css */
+
+/* Coin Rotation */
+.predict-loader {
+  transform: translateZ(1px);
+}
+.predict-loader:after {
+  content: '$';
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  text-align: center;
+  line-height:40px;
+  font-size: 32px;
+  font-weight: bold;
+  background: #FFD700;
+  color: #DAA520;
+  border: 4px double ;
+  box-sizing: border-box;
+  box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, .1);
+  animation: coin-flip 4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+@keyframes coin-flip {
+  0%, 100% {
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(1800deg);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  100% {
+    transform: rotateY(3600deg);
+  }
+}
+/* Coin Rotation */
+
+
+
+.predict-input-group {
+  display: flex;
+  justify-content: center;  /* Canh giữa theo chiều ngang */
+  align-items: center;      /* Canh giữa theo chiều dọc */
+  gap: 1rem;                /* Khoảng cách giữa select và button */
+  flex-wrap: nowrap;          /* Cho responsive khi màn hình nhỏ */
+  max-width: 500px;
+  margin-top: 1.5rem;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+
+
+.predict-input-group .form-select {
+  min-width: 200px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  flex: 1 1 70%;  /* Cho phép co giãn khi cần */
+}
+
+
+
+.btn.btn-predict {
+  white-space: nowrap;
+  background-color: #00C897;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.3s ease;
+  flex: 1 1 30%
+}
+
+.btn.btn-predict:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 0 8px rgba(0, 200, 151, 0.4);
+}
+
+.stock-predict-card {
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  margin-bottom: 3rem;
+}
+
+
+.result-box {
+  background-color: #eaf9f4;           
+  text-align: center;
+  padding: 1.5rem 1.5rem 1.8rem 1.5rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #007a56;                     /* Màu chữ xanh đậm hơn để đọc rõ */
+  max-width: 300px;
+  margin: 0 auto 2.5rem auto;
+  
+  box-shadow: 0 3px 8px rgba(0, 112, 85, 0.15);  /* Bóng mờ nhẹ nhàng hơn */
+  border: 1.5px solid #7ad9b8;                    /* Viền mỏng, màu pastel nhẹ */
+  
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.result-box:hover {
+  background-color: #d7f0e6;               /* Nền hover sáng nhẹ */
+  box-shadow: 0 5px 12px rgba(0, 112, 85, 0.25);
+  cursor: default;
+}

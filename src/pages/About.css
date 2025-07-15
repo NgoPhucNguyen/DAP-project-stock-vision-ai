@@ -1,0 +1,78 @@
+/* General container styling */
+.container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Hero Section */
+.about-hero-section {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #004b66;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.container > p {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+/* Button styling */
+.about-btn {
+  display: block;
+  margin: 0 auto 2rem auto;
+  padding: 12px 24px;
+  background-color: #00C897;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0, 200, 151, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.about-btn:hover {
+  background-color: #00af84;
+  transform: scale(1.03);
+}
+
+/* Section Cards */
+.row .part-visualization,
+.row .part-predict,
+.row .part-news,
+.row .part-chatbot {
+  background-color: #f9f9f9;
+  border-left: 6px solid #00C897;
+  padding: 20px;
+  margin-bottom: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: box-shadow 0.2s ease;
+}
+
+.row .part-visualization:hover,
+.row .part-predict:hover,
+.row .part-news:hover,
+.row .part-chatbot:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+/* Section Headers */
+.row h5 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #003f5c;
+  margin-bottom: 12px;
+}
+
+/* Paragraphs inside each section */
+.row p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 8px;
+}

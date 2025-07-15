@@ -1,0 +1,85 @@
+.chart-container {
+  padding: 1rem;
+  transition: box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-container:hover {
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.15);
+}
+
+.chart-title {
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #007bff;
+  text-align: center;
+}
+
+.zoom-back-btn {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.chart-grid-row {
+  row-gap: 1.5rem;
+}
+
+.fullscreen-loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.6); /* mờ nền */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+/* LOADER */
+.chart-loader {
+  width: 48px;
+  height: 48px;
+  background: #00C897;
+  display: block;
+  margin: 20px auto;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotationBack 1s ease-in-out infinite reverse;
+}
+.chart-loader::before {
+  content: '';  
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  transform: rotate(45deg);
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background:#00C897;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+.chart-loader::after {
+  content: '';  
+  box-sizing: border-box;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: #FFF;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}

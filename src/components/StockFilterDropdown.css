@@ -1,0 +1,33 @@
+/* Nút bộ lọc */
+.btn-filter {
+  background-color: #00C897;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.3s ease;
+}
+.btn-filter:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 0 8px rgba(0, 200, 151, 0.4);
+}
+
+/* ✅ Accent Color cho checkbox */
+input[type="checkbox"].form-check-input {
+  accent-color: #00C897 !important;
+}
+
+input[type="checkbox"].form-check-input:hover {
+  accent-color: #00b686 !important;
+}
+
+input[type="checkbox"].form-check-input:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 200, 151, 0.25);
+}
+
+@media (prefers-color-scheme: dark) {
+  input[type="checkbox"].form-check-input {
+    accent-color: #2fdba3 !important;
+  }
+}

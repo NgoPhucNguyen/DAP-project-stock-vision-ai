@@ -1,0 +1,95 @@
+.chatbox {
+  animation: slide-up 0.3s ease-out;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.bot-bubble,
+.user-bubble {
+  display: inline-block;
+  max-width: 80%;
+  padding: 10px 14px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 4px;
+}
+
+.user-bubble {
+  background-color: #00C897;
+  color: white;
+  border-top-right-radius: 4px;
+}
+
+.bot-bubble {
+  background-color: #f1f1f1;
+  color: black;
+  border-top-left-radius: 4px;
+}
+
+.bot-bubble p:last-child,
+.user-bubble p:last-child {
+  margin-bottom: 0;
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.input-group input,
+.form-control {
+  flex: 1;
+  min-width: 0;
+}
+
+
+.btn-send {
+  font-weight: 700;
+  padding: 0.6rem 1.2rem;
+  background-color: #00C897 !important;
+  border: none !important;
+  color: #fff;
+  border-radius: 999px;
+  box-shadow: 0 4px 14px rgba(0, 200, 151, 0.4) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  white-space: nowrap;
+}
+
+.btn-send:hover {
+  transform: scale(1.05);
+  background-color: #00a87d;
+  box-shadow: 0 6px 18px rgba(0, 200, 151, 0.6);
+}
+
+@media (max-width: 480px) {
+  .chatbox {
+    width: 95vw !important;
+    height: 90vh !important;
+    right: 0;
+    bottom: 0;
+    margin: 1rem;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  .btn-send {
+    width: 100%;
+  }
+}

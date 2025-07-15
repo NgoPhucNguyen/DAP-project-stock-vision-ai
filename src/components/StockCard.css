@@ -1,0 +1,109 @@
+/* ==== StockCard Component Styling ==== */
+
+/* Toàn bộ card */
+.stock-card {
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease, transform 0.25s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Hiệu ứng khi hover */
+.stock-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+}
+
+/* ==== Header: Logo + Symbol ==== */
+.stock-card .card-title {
+  font-size: 1.5rem;
+  color: #222;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Logo công ty */
+.stock-logo {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  object-fit: contain;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ==== Price + Change Section ==== */
+.stock-card .price-change {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Giá hiện tại */
+.stock-card .stock-price {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #212529;
+  margin: 0;
+}
+
+/* Tăng giảm màu sắc */
+.stock-card .text-success {
+  color: #198754 !important;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.stock-card .text-danger {
+  color: #dc3545 !important;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* ==== Description (dưới) ==== */
+.stock-card .card-text {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 1rem;
+  line-height: 1.4;
+  user-select: none;
+}
+
+/* ==== Button "Xem Dự Đoán" ==== */
+/* Tùy biến nút Bootstrap theo phong cách news-card */
+.stock-card .btn-outline-primary {
+  padding: 0.75rem 2rem;
+  font-weight: 700;
+  background-color: #00C897;
+  border: none;
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 14px rgba(0, 200, 151, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stock-card .btn-outline-primary:hover,
+.stock-card .btn-outline-primary:focus {
+  transform: scale(1.05);
+  background-color: #00a87d;
+  box-shadow: 0 6px 18px rgba(0, 200, 151, 0.6);
+}
+
+/* ==== Loading Price ==== */
+.stock-card .loading-text {
+  font-style: italic;
+  color: #999;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+}
