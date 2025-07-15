@@ -7,21 +7,20 @@ Một dự án môn DAP
 
 ## 🚀 Tính năng chính
 
-- 📈 Hiển thị biểu đồ giá cổ phiếu đa dạng (Line, Bar,Area ,Candlestick)
-- 🧠 Dự đoán giá cổ phiếu bằng mô hình học máy (ML)
-- 🤖 Tích hợp chatbot Gemini hỗ trợ hỏi đáp về thị trường
+- 🧠 Dự đoán giá cổ phiếu bằng mô hình học máy (ML) - cụ thẻ là LinearRegression
 - 📰 Lấy tin tức tài chính theo từng cổ phiếu + phân tích cảm xúc
-- 🔍 So sánh nhiều cổ phiếu cùng lúc trên biểu đồ
+- 🤖 Tích hợp chatbot Gemini hỗ trợ hỏi đáp về thị trường
 - 💬 Chatbot tự động gợi ý Mua/Bán dựa trên xu hướng giá
 - 🧩 Tùy chọn loại biểu đồ và loại giá (Open, High, Low, Close, Volume)
-
+- 📈 Hiển thị biểu đồ giá cổ phiếu đa dạng (Line, Bar,Area ,Candlestick)
+- 🔍 So sánh nhiều cổ phiếu cùng lúc trên biểu đồ
 ---
 
 ## 🧱 Công nghệ sử dụng
 
 | Frontend | Backend | AI/ML | API |
 |----------|---------|-------|-----|
-| React + Vite + Bootstrap | Flask (Python) | scikit-learn, TensorFlow (nếu có) | Google Gemini, yFinance, NewsAPI |
+| React + Vite + Bootstrap | Flask (Python) | scikit-learn, TensorFlow (nếu có) | Google Gemini, yFinance, Finnhub |
 
 ---
 
