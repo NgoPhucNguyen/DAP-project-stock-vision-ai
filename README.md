@@ -7,7 +7,7 @@ Một dự án môn DAP
 
 ## 🚀 Tính năng chính
 
-- 📈 Hiển thị biểu đồ giá cổ phiếu đa dạng (Line, Bar, Candlestick, OHLC...)
+- 📈 Hiển thị biểu đồ giá cổ phiếu đa dạng (Line, Bar,Area ,Candlestick)
 - 🧠 Dự đoán giá cổ phiếu bằng mô hình học máy (ML)
 - 🤖 Tích hợp chatbot Gemini hỗ trợ hỏi đáp về thị trường
 - 📰 Lấy tin tức tài chính theo từng cổ phiếu + phân tích cảm xúc
