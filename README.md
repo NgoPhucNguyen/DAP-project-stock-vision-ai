@@ -24,6 +24,21 @@ Một ứng dụng web thông minh dùng để trực quan hóa, dự đoán và
 
 ## ⚙️ Hướng dẫn cài đặt và chạy
 
+### ⚙️ Yêu cầu trước khi chạy dự án
+
+Trước khi khởi động project, hãy đảm bảo bạn đã cài đầy đủ các công cụ sau:
+
+---
+
+### ✅ 1. Cài đặt **Git**
+
+Để clone code từ GitHub:
+
+- Tải về: [https://git-scm.com/downloads](https://git-scm.com/downloads)
+- Sau khi cài, mở Terminal/Command Prompt kiểm tra:
+  ```bash
+  git --version
+  ```
 ### 1. Tải dự án về máy
 
 ```bash
