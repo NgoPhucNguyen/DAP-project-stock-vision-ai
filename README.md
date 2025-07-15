@@ -18,9 +18,9 @@ Một dự án môn DAP
 
 ## 🧱 Công nghệ sử dụng
 
-| Frontend | Backend | AI/ML | API |
+| Frontend | Backend | ML | API |
 |----------|---------|-------|-----|
-| React + Vite + Bootstrap | Flask (Python) | scikit-learn, TensorFlow (nếu có) | Google Gemini, yFinance, Finnhub |
+| React + Vite + Bootstrap | Flask (Python) | Scikit-learn | Google Gemini, yFinance, Finnhub |
 
 ---
 
@@ -33,6 +33,22 @@ git clone https://github.com/NgoPhucNguyen/DAP-project-stock-vision-ai.git
 cd DAP-project-stock-vision-ai
 ```
 
+### 2.Tải requirements cho backend và chạy backend
+```bash
+DAP-project-stock-vision-ai/
+cd DAP-project-stock-vision-ai/backend
+cd backend  
+python -m venv venv
+venv\Scripts\activate  # với Windows | source venv/bin/activate (Linux/Mac)
+pip install -r requirements.txt
+python app.py
+```
+
+### 3. Tải NPM và chạy frontend
+```bash
+npm install
+npm run dev
+```
 
 ## 👥 Thành viên nhóm
 Ngo Phuc Nguyen (Felix) – Phát triển giao diện & tích hợp AI
